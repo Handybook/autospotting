@@ -754,22 +754,6 @@ func (a *autoScalingGroup) getCompatibleSpotInstanceTypes(
 			logger.Println("This is a x1.16large, continuing evaluation")
 		} else if candidate.instanceType == "m4.16xlarge" {
 			logger.Println("This is a m4.16xlarge, continuing evaluation")
-		} else if candidate.instanceType == "m4.10xlarge" {
-			logger.Println("This is a m4.10xlarge, continuing evaluation")
-		} else if candidate.instanceType == "i2.8xlarge" {
-			logger.Println("This is a i2.8xlarge, continuing evaluation")
-		} else if candidate.instanceType == "r3.8xlarge" {
-			logger.Println("This is a r3.8xlarge, continuing evaluation")
-		} else if candidate.instanceType == "c4.8xlarge" {
-			logger.Println("This is a c4.8xlarge, continuing evaluation")
-		} else if candidate.instanceType == "d2.8xlarge" {
-			logger.Println("This is a d2.8xlarge, continuing evaluation")
-		} else if candidate.instanceType == "i2.4xlarge" {
-			logger.Println("This is a i2.4xlarge, continuing evaluation")
-		} else if candidate.instanceType == "cc2.8xlarge" {
-			logger.Println("This is a cc2.8xlarge, continuing evaluation")
-		} else if candidate.instanceType == "r3.4xlarge" {
-			logger.Println("This is a r3.4xlarge, continuing evaluation")
 		} else {
 			logger.Println("Not a one of our chosen instance types, skipping.", candidate.instanceType)
 			continue
